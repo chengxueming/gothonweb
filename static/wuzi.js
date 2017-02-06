@@ -77,7 +77,8 @@ function callback(){
 
 function getAnotherPic(){
    src = "static/white.png"
-   if(document.getElementById('qizi').src == "static/white.png"){
+   alert(document.getElementById('qizi').src)
+   if(document.getElementById('qizi').src.indexOf('white') > 0){
       src = "static/black.png";
    }
    return 'url(' + src + ')';
